@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Oursystem.Fragment_Oursystem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/layerbackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/resource"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+
+
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="OUR SYSTEM"
+
+                    android:textAllCaps="true"
+
+                    android:textColor="@color/teal_700"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="0dp"
+                    app:srcCompat="@drawable/applogo">
+
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RFTutelage College "
+                        android:textColor="#000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+
+                        />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/img"
+
+                    ></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Our System"
+                    android:textColor="#000"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="2sp"
+
+                    android:padding="10dp"
+                    android:text="The University of RFTutelage was established in 1890 at Woolwich Polytechnic and received its first CGLI certificate in 1892. In 1992, the institution gained the status of a university . Over the years, the university has made its place among the top academic institutions in the world. It has gained the accreditations of many prestigious organizations like CIPD, APS, and AMBA
+ RFTutelage College exciting, modern campus is located in the heart of Sydney’s bustling CBD. Transport, shopping, cafes, entertainment hotspots and major attractions are all within 5 minutes walk and some of the world’s best-known beaches are a short bus-ride away – so it’s easy to experience the best the city has to offer while you study.
+  RFTutelage College is considered one of the India?s best English College and offers great facilities, friendly teachers and excellent student Services. It has demonstrated success in delivering engaging and effective English Language and business management courses.
+"
+                    android:textColor="#000000"
+                    android:textFontWeight="3">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="@drawable/layerbackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="RFTutelage"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/cookie"
+                        android:justificationMode="inter_word"
+                        android:padding="10dp"
+                        android:text=" RFTutelage was established with the primary objective of making education accessible and affordable to the rural youth. With the hallmarked vision: Putting Value into Education, at present, it manages 56 educational institutions from Kindergarten to Doctoral Studies in the state of Karnataka in India. These institutions offer quality education in the fields of General, Law, Technical, Medical and Management Studies. These institutions ensure quality through updated skill sets and value based education.
+"
+
+                        android:textSize="16sp">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Our President"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_5"
+
+                    >
+
+                </com.mikhaellopez.circularimageview.CircularImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="2sp"
+
+                    android:padding="10dp"
+                    android:text=" Dr. D. Narayana Murthi is a multi-faceted personality who combines in him many roles. Being the head of a religious institution that draws millions, he is the dispenser of justice. The tradition of  Daanaparampara finds greater meaning under his able administration of Shri Kshethra. As the president of RFTutelage Educational Society, he is the guiding spirit and driving force behind the institution’s run. The Society under his guidance, runs more than 50 educational institutions – Kindergarten to the Doctoral studies – in the fields like Technical, Medical, Management Law and General Higher Education – across the state of Karnataka in India. Rural Development and Self Employment Training Institutes (RUDSETI) established nationwide by him have brought smiles on the faces of countless unemployed youth. Many awards and recognitions came in search of him for his untiring contributions to the welfare of the society. To name a few, he is the recipient of Ashden International Gold Award, London, which is also considered as the Green Oscar and Padma Vibhushan, the second highest civilian award in India."
+                    android:textColor="#000000"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Our Principal"
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/img_9">
+
+                </com.mikhaellopez.circularimageview.CircularImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:justificationMode="inter_word"
+
+                    android:lineSpacingExtra="2sp"
+
+                    android:padding="10dp"
+                    android:text="Dr. Ramakrishna S, the functioning Principal of RFTutelage has been one of the building blocks of the institution, as he has served at the college since 1986. With 33 years of teaching experience, he took up the position of Principal of RFTutelage on 1st of June, 2019.
+
+Dr. Ramakrishna S graduated from Mangalore University and pursued his Masters in Physics at the same institute until 1985. He specializes in Nuclear Physics, and his ardent interest in research in the area reflects in the 3 international papers he has published. He is also finished his Ph.D from Tumkur University.
+
+Before assuming the post of Principal, Dr. Ramakrishna S has served as HOD of Physics, Dean of Science, Vice Principal of the College and also a State Level awarded NSS Officer. Alongside academics, he also takes keen interest in sports and agriculture which contribute to his excelling personality.
+
+Dr. Ramakrishna has been awarded the Ph.D in under for his research titled ‘Synthesis, Growth and Structural investigation of π-Conjugated non-linear optical materials.’ He was guided by Nandakumar M Shetti."
+                    android:textColor="#000000"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_button_bk"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="Our vision and mesion "
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Our vision"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+
+                        android:textStyle="bold"
+                        android:typeface="serif">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:layout_marginBottom="10dp"
+
+                        android:fontFamily="@font/cookie"
+
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="2sp"
+                        android:padding="10dp"
+                        android:text="Empowerment through competency building with ethical foundation"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:typeface="serif">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Our mission"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+
+                        android:textStyle="bold"
+                        android:typeface="serif">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/cookie"
+
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="2sp"
+                        android:padding="10dp"
+
+
+                        android:text="Providing infrastructural facilities to meet the contemporary needs
+
+Inculcating the spirit of inquiry
+
+Adopting learner centered approach
+
+Empowering teaching, learning and evaluation through effective use of ICT
+
+Practicing fair and just methods of assessment and evaluation
+
+Enhancing growth opportunities for employability
+
+Sustaining transparency in institutional governance
+
+Fostering value practices and social responsibility
+
+Focusing on continuous improvement through comprehensive feedback"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:typeface="serif">
+
+                    </TextView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Core Values"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="sans-serif"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="2sp"
+                    android:padding="10dp"
+                    android:text="Not to take success for granted and not to be complacent Not to rest on laurels Not to slow down or give up To add values to the work and try to be creative To keep the learning curve moving vertically
+"
+                    android:textStyle="bold"
+                    android:typeface="serif">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/subjects_menu"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="
+Institutional Ethos"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/cookie"
+                        android:justificationMode="inter_word"
+                        android:lineSpacingExtra="2sp"
+
+                        android:padding="10dp"
+
+
+                        android:text="Institutional Best Practices are evolved based on the values upon which the institution is built. The college was established with the motto of Samyak Darshana Jnana Charitryani, meaning Right Perspective, Right Knowledge and Right Conduct. Hence, the best practices of the college are aligned with the inculcation of these values among the learners through various initiatives and activities. Carbon neutral campus, energy conservation and alternative uses of energy, green cover and botanical gardens, water conservation, management of hazardous waste, reduction in the use of plastic products, rain water harvesting, organic waste management, use of solar energy are some of the best practices in the campus. In addition to these, the college introduced innovations in curricular and co-curricular activities, social responsibility series, optimum utilization of the library facilities, and promotion of research culture in the campus through various initiatives."
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:typeface="serif">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

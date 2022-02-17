@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">RFTutelage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">College Blog</string>
+    <string name="title_notifications">Meetings</string>
+    <string name="home">HOME</string>
+    <string name="all_categories">ALL CATEGORY</string>
+    <string name="add_missing_place">ADD MISSING PLACE</string>
+    <string name="subjects">SUBJECTS</string>
+    <string name="attendance">ATTENDANCE</string>
+    <string name="activities">ACTIVITIES</string>
+    <string name="shops">CALENDAR</string>
+    <string name="profile">PROFILE</string>
+    <string name="logout">LOGOUT</string>
+    <string name="timetable">TIMETABLE</string>
+    <string name="calendar">CALENDAR</string>
+    <string name="slogan_name">RFTutelage</string>
+    <string name="logo_name">Parent Portal of Redefined Formal Education</string>
+    <string name="navigation_drawer_open">navigation bar open</string>
+    <string name="navigation_bar_close">navigation bar close</string>
+    <string name="staff">STAFF</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_parent_profile">parent_profile</string>
+    <string name="tab_text_1">Father</string>
+    <string name="tab_text_2">Mother</string>
+    <string name="title_activity_college_blog">CollegeBlog</string>
+    <string name="title_activity_college_blog_dashboard">CollegeBlogDashboard</string>
+    <string name="tab_text_3">College</string>
+    <string name="tab_text_4">Faculty</string>
+    <string name="tab_text_5">Student</string>
+    <string name="title_activity_report_leave_main_page">report_leave_main_page</string>
+    <string name="tab_text_6">Report Leave</string>
+    <string name="tab_text_7">History</string>
+</resources>

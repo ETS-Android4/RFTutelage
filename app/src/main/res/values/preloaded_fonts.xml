@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/arbutus</item>
+        <item>@font/asset</item>
+        <item>@font/chango</item>
+        <item>@font/chicle</item>
+        <item>@font/cookie</item>
+        <item>@font/courgette</item>
+        <item>@font/galada</item>
+        <item>@font/lilita_one</item>
+        <item>@font/oleo_script_bold</item>
+        <item>@font/quantico</item>
+        <item>@font/rammetto_one</item>
+        <item>@font/ruslan_display</item>
+    </array>
+</resources>
