@@ -1,0 +1,329 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 04, 2021 at 07:03 PM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `parentportal`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `calendar`
+--
+
+CREATE TABLE `calendar` (
+  `id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `description` mediumtext NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `time` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `calendar`
+--
+
+INSERT INTO `calendar` (`id`, `title`, `location`, `image`, `description`, `date`, `time`) VALUES
+(1, 'Quiz Competition', 'Auditorium', 'http://192.168.43.84/parentportal/images/calendar/sciencequiz.jpg', 'Rules: On the immediate completion of a question, each team gets 5 seconds to answer it. If a team is not able to answer a question, they can pass it for the next question. There is no team discussion in this round. 10 points is awarded for the correct answer', '27-7-2021', '10 AM'),
+(2, 'Speech Competition', 'Auditorium', 'http://192.168.43.84/parentportal/images/calendar/speechcompetition.jpg', 'List of Persuasive Speech Topics on Environment: 1.	How will recycling help us? 2.	Should there be a ban on smoking in public places? 3.	Should zoos be banned? 4.	Should there be a ban on animal testing? 5.	Will banning plastic bags help? 6.	Should exotic animals be kept as pets? 7.	Is the government doing enough to tackle Global Warming? 8.	How to control water pollution? 9.	What is better: Buying pets or Adoption? 10.	Why Elephant riding is unethical?', '27-7-2021', '11 AM');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `collegeblog`
+--
+
+CREATE TABLE `collegeblog` (
+  `id` int(11) NOT NULL,
+  `blogtitle` varchar(255) NOT NULL,
+  `blogdate` varchar(255) NOT NULL,
+  `blogdescription` longtext NOT NULL,
+  `blogimage` varchar(255) NOT NULL,
+  `blogimage1` varchar(255) NOT NULL,
+  `blogimage2` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `collegeblog`
+--
+
+INSERT INTO `collegeblog` (`id`, `blogtitle`, `blogdate`, `blogdescription`, `blogimage`, `blogimage1`, `blogimage2`) VALUES
+(1, 'SKY IS THE CLUSTER OF WONDERS', '26-7-2021', 'The sky is the appearance of the atmosphere around the surface of the planet from our point of view. We see many objects that are actually in space such as the Sun, the Moon, and stars because they are in the sky. Depending on the time of day, the sky may appear in different colors.\n\nAt dawn or dusk the sky may appear red, orange, or even green and purple depending on how low the sun is and how close it is to night.\n\nMany things can be seen in the sky. There are objects from space like the Sun, Moon, and stars. There are also many weather events seen in the sky. Some of the natural phenomena seen in the sky are clouds, rainbows, and aurorae. Lightning and precipitation, when you look at the sky at night there are several things happening. Planets and galaxies are revolving, moon is on its task, comets and asteroids are on their journey. If you go more and more deep into the sky you may witness wonder of wonders” Prof Ramesh Bhat was addressing the students of SDM College Ujire during a Webinar on WONDERS OF SKY. He explained all these phenomena scientifically and answered the queries by the students.\n\nThe webinar was organised by the Physics department of SDM College Ujire 0n 22-07-2021.The programme was witnessed by 228 participants including students and faculty members. Ms Namratha welcomed the gathering, Ms Apeksha introduced the resource person to the audience and Ms Rashmi proposed vote of thanks. Principal Dr Satheeshchandra S and HOD of Physics Department Mr S N Kakathkar were present', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage1.jpg', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage2.jpg', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage3.jpg'),
+(2, 'MEMORANDUM OF UNDERSTANDING', '27-7-2021', 'A Memorandum of Understanding (MoU) between Sri Dharmasthala Manjunatheshwara College (Autonomous), Ujire and Durban University of Technology, Durban, 4001, South Africa has signed in the month of April 2021. This MoU is intended to build capabilities of human resources (students, research scholars and faculties) through skill development programs and advanced research collaborations in the areas of Medicinal Chemistry for the synthesis of small molecule libraries to target various diseases characterization of the compounds, single crystal X-ray studies and in silico studies. It is also intended to enhance Research and Academic Standards by mutual lab visits for faculties and students for specific Chemistry related programs. This MoU will be in force for a period of three years from the date of signing', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage4.jpg', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage5.jpg', 'http://192.168.43.84/parentportal/images/blogposts/collegeposts/blogimage6.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `facultyblog`
+--
+
+CREATE TABLE `facultyblog` (
+  `id` int(11) NOT NULL,
+  `facultyphoto` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `department` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `facultyblog`
+--
+
+INSERT INTO `facultyblog` (`id`, `facultyphoto`, `name`, `department`, `date`, `image`, `title`, `description`) VALUES
+(1, 'http://192.168.43.84/parentportal/images/blogposts/facultyposts/facultyimaage1.jpg', 'Yashaswi Purohith', 'BVoc(Software and App Development)', '27-7-2021', 'http://192.168.43.84/parentportal/images/blogposts/facultyposts/facultyblogimage.jpg', 'The Intellectual Space', 'An educational institution is where a person spends the most precious years of his life in hopes of building a sustainable foundation for the rest of his life. In comprehension of that, it becomes the responsibility of the institution to establish itself in such a manner that the years one spends within its walls turn out to be golden years in true sense.\r\n\r\nWhile SDMIT keeps in mind the fact and strives in every sphere to facilitate multi-dimensional growth of students, there are some areas that we evidently excel in. The college library is quite visibly one such sphere. The dedicated library block situated over an area of 1300 sq.ft is a fully automated and engaging facility of the college. We have a capacity of 250 which allows students to utilize the library all through the day for as long as they want, and with whatever capacity they intend.\r\n\r\nThe SDMIT library is a member of the VTU Consortium, which means that the students have free access to academic materials directly sanctioned by the VTU and most of them not available elsewhere. The library is also a member of Delnet, and of NDL (National Digital Library) which expand the availability of quality reading material to an unmatched level. We also have D-space digital library systems incorporated which allow students to access question papers, notes and projects from previous academic years without restrictions.\r\n\r\nThe library keeps track of library usage by students through bar code tracking, through which best users of the library are chosen every month and given recognition. The fully automated setup allows us to keep perfect track of borrowing and returning facilities which are highly utilized by our students. Evidently, the SDMIT library is amongst the busiest places within the campus. It is a matter of pride for the college that the students seek out reading facilities as much as other platforms in the college. \r\n\r\n'),
+(2, 'http://192.168.43.84/parentportal/images/blogposts/facultyposts/faculty2.jpg', 'Prashamsha V M', 'BVoc(Retail and supply chain management)', '31-7-2021', 'http://192.168.43.84/parentportal/images/blogposts/facultyposts/yaskshagana.jpg', 'SDM Kalavaibhava', 'India fosters a number of art forms. Talented students are given extensive training to perform Indian and foreign classical and contemporary dance forms by eminent teachers. Kalavaibhava, an artistic feat of dance forms performed by our students at different parts of the country is growing richer every year. This opportunity provides the students not only a stage to showcase their talents but also learn from the great experiences of performing for diverse audiences.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feesandtransport`
+--
+
+CREATE TABLE `feesandtransport` (
+  `id` int(11) NOT NULL,
+  `roll_no` varchar(255) NOT NULL,
+  `fromdestination` varchar(255) NOT NULL,
+  `todestination` varchar(255) NOT NULL,
+  `Total_pending_fees` varchar(255) NOT NULL,
+  `Toatalfees` varchar(255) NOT NULL,
+  `trasportsource` varchar(255) NOT NULL,
+  `traveldistance` varchar(255) NOT NULL,
+  `annual_fees` varchar(255) NOT NULL,
+  `annual_pending_fees` varchar(255) NOT NULL,
+  `annual_fees_paid` varchar(255) NOT NULL,
+  `total_fees_paid` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `feesandtransport`
+--
+
+INSERT INTO `feesandtransport` (`id`, `roll_no`, `fromdestination`, `todestination`, `Total_pending_fees`, `Toatalfees`, `trasportsource`, `traveldistance`, `annual_fees`, `annual_pending_fees`, `annual_fees_paid`, `total_fees_paid`) VALUES
+(1, '191101', 'Vanasi house, Village Govindpur, PO Karimnagar, PRASARPUR, Bankura District, West bengal 748 027', 'Expert University, PRASARPUR, Bankura District, West bengal 748 027', '45000', '90000', 'Bus', '25 Km', '30000', '15000', '15000', '45000');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `studentblog`
+--
+
+CREATE TABLE `studentblog` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `departmentandrollno` varchar(255) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `decsription` longtext NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `studentphoto` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `studentblog`
+--
+
+INSERT INTO `studentblog` (`id`, `name`, `departmentandrollno`, `image`, `title`, `decsription`, `date`, `studentphoto`) VALUES
+(1, 'Saniya', 'BVoc(Software and App Development) 191156', 'http://192.168.43.84/parentportal/images/blogposts/studentposts/blogimage5.jpg', 'Ayurveda Goals!', 'Ayurveda, a natural system of medicine, originated in India more than 3,000 years ago. The term Ayurveda is derived from the Sanskrit words ayur (life) and veda (science or knowledge). Thus, Ayurveda translates to knowledge of life. Based on the idea that disease is due to an imbalance or stress in a person\'s consciousness, Ayurveda encourages certain lifestyle interventions and natural therapies to regain a balance between the body, mind, spirit, and the environment.\n\nAyurveda treatment starts with an internal purification process, followed by a special diet, herbal remedies, massage therapy, yoga, and meditation.\n\nThe concepts of universal interconnectedness, the body\'s constitution (prakriti), and life forces (doshas) are the primary basis of ayurvedic medicine. Goals of treatment aid the person by eliminating impurities, reducing symptoms, increasing resistance to disease, reducing worry, and increasing harmony in life. Herbs and other plants, including oils and common spices, are used extensively in Ayurvedic treatment. \n\nIn India, Ayurveda is considered a form of medical care, equal to conventional Western medicine, traditional Chinese medicine, naturopathic medicine, and homeopathic medicine. Practitioners of Ayurveda in India undergo state-recognized, institutionalized training. Currently, Ayurvedic practitioners are not licensed in the United States, and there is no national standard for Ayurvedic training or certification. However, Ayurvedic schools have gained approval as educational institutions in some states.  \n\nAyurveda can have positive effects when used as a complementary therapy in combination with standard, conventional medical care.\n\nMany Ayurvedic materials have not been thoroughly studied in either Western or Indian research. Some of the products used in Ayurvedic medicine contain herbs, metals, minerals, or other materials that may be harmful if used improperly or without the direction of a trained practitioner. Ayurvedic medicines are regulated as dietary supplements rather than as drugs in the United States, so they are not required to meet the safety and efficacy standards for conventional medicines. These medicines can interact, or work against, the effects of Western medicines. Investigate the training and background of Ayurvedic practitioners whom you intend to use.\n\nIt\'s important to discuss any Ayurvedic treatments that you use with your doctor. Women who are pregnant or nursing, or people who are thinking of using Ayurvedic therapy to treat a child, should consult their healthcare provider. It is important to make sure that any diagnosis of a disease or condition has been made by a healthcare provider who has substantial conventional medical training and experience with managing that disease or condition. While Ayurveda can have positive effects when used as a complementary therapy in combination with standard, conventional medical care, it should not replace standard, conventional medical care, especially when treating serious conditions. ', '28-7-2021', 'http://192.168.43.84/parentportal/images/blogposts/studentposts/studentimage.jpg'),
+(2, 'Soniya', 'BVoc (Retail and Supply chain Management) 191162', 'http://192.168.43.84/parentportal/images/blogposts/studentposts/treehill.jpg', 'Tree Hill', 'There’s always one thing that we recall every time we think about college days. It could be the canteen, the view from the top most floor, or perhaps even the walls and classrooms. It’s a granted fact that students, when they leave college, reminiscence student life with possibly any other relevant factor except academics.\r\n\r\nBy popular opinion, SDMIT has a central (quite literally) attraction factor that has always been the key to keeping the visual memory of the college intact. Just as you enter the building, you’re in for a surprise as there stands a large tree atop a hill within the campus.\r\n\r\nYes you read it right – within the campus. Apparently, when the campus was being constructed, the hill and the tree atop it formed a magnificent sight, which our President Dr. D Veerendra Heggade decided shall be kept intact. Hence the tree and the hill were made the central structure around which the campus was constructed. And until today, even after 11 years, the ‘One tree hill’ in the midst of the campus stands tall, stretching up to the topmost floor of the building. Inevitably, it makes for a picturesque factor that shall easily be the factor influencing most visual memories associated with the college. After all, most students spend time staring at the beautiful monsoon sights the tree hill makes for when lessons seem to be passing atop their heads! Regardless, SDMIT is proud and endeared by this factor which clearly sets the infrastructure apart from the rest of our kind. \r\n\r\n', '31-7-2021', 'http://192.168.43.84/parentportal/images/blogposts/studentposts/studentimage1.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `studentregistration`
+--
+
+CREATE TABLE `studentregistration` (
+  `id` int(11) NOT NULL,
+  `student_name` varchar(255) NOT NULL,
+  `photo` varchar(255) NOT NULL,
+  `date_of_birth` varchar(255) NOT NULL,
+  `course` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `batch` varchar(255) NOT NULL,
+  `admn_no` int(255) NOT NULL,
+  `roll_no` int(255) NOT NULL,
+  `admission_date` date NOT NULL,
+  `day_scholar_residentioal` varchar(255) NOT NULL,
+  `blood_group` varchar(255) NOT NULL,
+  `gender` varchar(255) NOT NULL,
+  `nationality` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `registration_status` varchar(255) NOT NULL DEFAULT 'unregistered',
+  `current_semester` varchar(255) NOT NULL,
+  `phone_number` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `father_name` varchar(255) NOT NULL,
+  `mother_name` varchar(255) NOT NULL,
+  `father_phone_number` varchar(255) NOT NULL,
+  `mother_phone_number` varchar(255) NOT NULL,
+  `father_religion` varchar(255) NOT NULL,
+  `father_caste` varchar(255) NOT NULL,
+  `father_employment_status` varchar(255) NOT NULL,
+  `mother_employment_status` varchar(255) NOT NULL,
+  `father_email_address` varchar(255) NOT NULL,
+  `mother_email_address` varchar(255) NOT NULL,
+  `mother_religion` varchar(255) NOT NULL,
+  `mother_caste` varchar(255) NOT NULL,
+  `father_photo` varchar(255) NOT NULL,
+  `mother_photo` varchar(255) NOT NULL,
+  `subject_code` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `studentregistration`
+--
+
+INSERT INTO `studentregistration` (`id`, `student_name`, `photo`, `date_of_birth`, `course`, `subject`, `batch`, `admn_no`, `roll_no`, `admission_date`, `day_scholar_residentioal`, `blood_group`, `gender`, `nationality`, `address`, `registration_status`, `current_semester`, `phone_number`, `Email`, `father_name`, `mother_name`, `father_phone_number`, `mother_phone_number`, `father_religion`, `father_caste`, `father_employment_status`, `mother_employment_status`, `father_email_address`, `mother_email_address`, `mother_religion`, `mother_caste`, `father_photo`, `mother_photo`, `subject_code`) VALUES
+(1, 'Shaniha', 'http://192.168.43.84/parentportal/images/Saniha191101.jpg', '4-7-2000', 'BVoc', 'Software and Application Development', '2019-2022', 2019123, 191101, '2019-07-07', 'day scholar', 'B +ve', 'female', 'India', 'Vanasi house, Village Govindpur, PO Karimnagar, PRASARPUR, Bankura District, West bengal 748 027', 'registered', '4', '2147483647', 'saniha@gmail.com', 'Varadharaj M N', 'Vanasi M N', '2147483642', '2147483646', 'Hindu ', 'Billava', 'Agriculturist', 'House wife', 'varadharajmn@gmail.com', 'mnvanasi@gmail.com', 'Hindu', 'Billava', 'http://192.168.43.84/parentportal/images/father_module_image.jpg', 'http://192.168.43.84/parentportal/images/mother_module_photo.jpg', 'BVOCSAD');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `timetable`
+--
+
+CREATE TABLE `timetable` (
+  `Id` int(11) NOT NULL,
+  `semester` varchar(11) NOT NULL,
+  `day` varchar(255) NOT NULL,
+  `nine_to_ten` varchar(255) NOT NULL,
+  `faculty` varchar(255) NOT NULL,
+  `ten_to_eleven` varchar(255) NOT NULL,
+  `faculty1` varchar(255) NOT NULL,
+  `eleven_to_twelve` varchar(255) NOT NULL,
+  `faculty2` varchar(255) NOT NULL,
+  `twelve_to_one` varchar(255) NOT NULL,
+  `faculty3` varchar(255) NOT NULL,
+  `two_to_five` varchar(255) DEFAULT NULL,
+  `faculty4` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `timetable`
+--
+
+INSERT INTO `timetable` (`Id`, `semester`, `day`, `nine_to_ten`, `faculty`, `ten_to_eleven`, `faculty1`, `eleven_to_twelve`, `faculty2`, `twelve_to_one`, `faculty3`, `two_to_five`, `faculty4`) VALUES
+(1, '4', 'MONDAY', 'Mobile Application Development', 'YASHASWI PUROHITH', 'Data Structure and C++ Project ', 'SHANVIK R.P', 'Data Structure and C++ Project ', 'SHANVIK  R.P', 'Data Structure and C++ Project ', 'YASHASWI PUROHITH', 'Introduction To Go Programming-Lab ', 'SANKETH V N'),
+(2, '4', 'TUESDAY', 'Introduction To Go Programming ', 'SANKETH V N', 'Mobile Application Development ', 'YASHASWI PUROHITH', 'Data Structure and C++ Project ', 'SHANVIK R.P', 'Data Structure and C++ Project ', 'YASHASWI PUROHITH', 'LIBRARY', NULL),
+(3, '4', 'WEDNESDAY', 'KANNADA', 'KRISHNAMOORTHY HEGDE', 'KANNADA', 'KRISHNAMOORTHY HEGDE', 'Introduction To Go Programming ', 'SANKETH V N', 'Data Structure and C++ Project ', 'YASHASWI PUROHITH', 'Mobile Application Development Lab ', 'YASHASWI PUROHITH'),
+(4, '4', 'THURSDAY', 'Introduction To Go Programming ', 'SANKETH V N', 'Mobile Application Development Lab ', 'YASHASWI PUROHITH', 'Mobile Application Development Lab ', 'YASHASWI PUROHITH', 'Mobile Application Development Lab ', 'YASHASWI PUROHITH', 'LIBRARY', NULL),
+(5, '4', 'FRIDAY', 'Introduction To Go Programming-Lab ', 'SHANVIK R.P', 'Introduction To Go Programming-Lab ', 'SHANVIK R.P', 'Introduction To Go Programming-Lab ', 'SANKETH V N', 'Mobile Application Development ', 'YASHASWI PUROHITH', 'Data Structure and C++ Project ', 'YASHASWI PUROHITH'),
+(6, '4', 'SATURDAY', 'ENGLISH', 'SOORYESH', 'ENGLISH', 'SOORYESH', 'Mobile Application Development', 'YASHASWI PUROHITH', 'Introduction To Go Programming', 'SANKETH V N', NULL, NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `calendar`
+--
+ALTER TABLE `calendar`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `collegeblog`
+--
+ALTER TABLE `collegeblog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `facultyblog`
+--
+ALTER TABLE `facultyblog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `feesandtransport`
+--
+ALTER TABLE `feesandtransport`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `studentblog`
+--
+ALTER TABLE `studentblog`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `studentregistration`
+--
+ALTER TABLE `studentregistration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `timetable`
+--
+ALTER TABLE `timetable`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `calendar`
+--
+ALTER TABLE `calendar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `collegeblog`
+--
+ALTER TABLE `collegeblog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `facultyblog`
+--
+ALTER TABLE `facultyblog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `feesandtransport`
+--
+ALTER TABLE `feesandtransport`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `studentblog`
+--
+ALTER TABLE `studentblog`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `studentregistration`
+--
+ALTER TABLE `studentregistration`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `timetable`
+--
+ALTER TABLE `timetable`
+  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
